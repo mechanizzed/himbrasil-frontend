@@ -1,9 +1,8 @@
 import Image from 'next/image';
 
-import BgVille from '../../public/bg_ville2.jpeg';
 import VVLogo from '../../public/vv_logo.webp';
 
-export const Home = () => {
+export default function Home() {
   return (
     // <main className="w-full h-screen flex justify-start bg-main">
     //   <div className="w-full">
@@ -41,6 +40,4 @@ export const Home = () => {
       </div>
     </main>
   );
-};
-
-export default Home;
+}
