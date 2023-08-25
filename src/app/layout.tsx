@@ -16,6 +16,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <meta property="og:description" content="Neon Noir by VV." />
+      <meta property="og:url" content="https://www.heartagram.com.br/" />
+
+      <meta
+        property="og:image"
+        content="https://www.heartagram.com.br/bg_ville2_resize.jpeg"
+      />
+      <meta
+        property="og:image:secure_url"
+        content="https://www.heartagram.com.br/bg_ville2_resize.jpeg"
+      />
+      <meta property="og:image:width" content="800" />
+      <meta property="og:image:height" content="732" />
+
       <body className={inter.className}>{children}</body>
     </html>
   );
