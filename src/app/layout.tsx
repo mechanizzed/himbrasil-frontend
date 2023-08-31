@@ -1,12 +1,14 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Raleway } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const rale = Raleway({
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: 'VV | Ville Valo',
-  description: 'Ville Valo | Neon Noir',
+  description: 'VILLE VALO NO BRASIL - 01.11.2023 São Paulo',
 };
 
 export default function RootLayout({
@@ -30,7 +32,7 @@ export default function RootLayout({
       <meta property="og:image:width" content="800" />
       <meta property="og:image:height" content="732" />
 
-      <body className={inter.className}>{children}</body>
+      <body className={rale.className}>{children}</body>
     </html>
   );
 }
