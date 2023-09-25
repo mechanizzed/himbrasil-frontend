@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 import { Raleway } from 'next/font/google';
 
 const rale = Raleway({
@@ -32,7 +33,10 @@ export default function RootLayout({
       <meta property="og:image:width" content="800" />
       <meta property="og:image:height" content="732" />
 
-      <body className={rale.className}>{children}</body>
+      <body className={rale.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
