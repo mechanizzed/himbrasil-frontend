@@ -9,7 +9,7 @@ const rale = Raleway({
 
 export const metadata: Metadata = {
   title: 'VV | Ville Valo',
-  description: 'VILLE VALO NO BRASIL - 01.11.2023 São Paulo',
+  description: 'VILLE VALO - Neon Noir',
 };
 
 export default function RootLayout({
