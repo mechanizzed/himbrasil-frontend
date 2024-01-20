@@ -9,7 +9,7 @@ const rale = Raleway({
 
 export const metadata: Metadata = {
   title: 'VV | Ville Valo',
-  description: 'VILLE VALO - Neon Noir',
+  description: 'VILLE VALO - HIMBRASIL',
 };
 
 export default function RootLayout({
@@ -19,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <meta property="og:description" content="Neon Noir by VV." />
+      <meta
+        property="og:description"
+        content="Neon Noir by VV | himbrasil | heartagram"
+      />
       <meta property="og:url" content="https://www.heartagram.com.br/" />
 
       <meta
