@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Raleway } from 'next/font/google';
 
 const rale = Raleway({
@@ -18,27 +18,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
+    <html lang='pt-BR'>
       <meta
-        property="og:description"
-        content="Neon Noir by VV | himbrasil | heartagram"
+        property='og:description'
+        content='Neon Noir by VV | himbrasil | heartagram'
       />
-      <meta property="og:url" content="https://www.heartagram.com.br/" />
+      <meta property='og:url' content='https://www.heartagram.com.br/' />
 
       <meta
-        property="og:image"
-        content="https://www.heartagram.com.br/bg_ville2_resize.jpeg"
+        property='og:image'
+        content='https://www.heartagram.com.br/bg_ville2_resize.jpeg'
       />
       <meta
-        property="og:image:secure_url"
-        content="https://www.heartagram.com.br/bg_ville2_resize.jpeg"
+        property='og:image:secure_url'
+        content='https://www.heartagram.com.br/bg_ville2_resize.jpeg'
       />
-      <meta property="og:image:width" content="800" />
-      <meta property="og:image:height" content="732" />
+      <meta property='og:image:width' content='800' />
+      <meta property='og:image:height' content='732' />
 
       <body className={rale.className}>
         {children}
-        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
